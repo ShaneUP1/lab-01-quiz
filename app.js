@@ -22,24 +22,23 @@ button.addEventListener('click', ()=> {
         if (yesChecker(yearBorn)) {
             yesAnswers++;
         }
-        // console.log(yesAnswers);
     
     const marriagePlace = prompt('Number two: Did Shane meet his wife at Modern Monkey CrossFit?');
         if (!yesChecker(marriagePlace)) {
             yesAnswers++;
         }
-        //   console.log(yesAnswers);
 
     const anyKids = prompt(`Okay ${userName}, your final question: Does Shane have any children?`);
         if (yesChecker(anyKids)) {
             yesAnswers++;
         }
-            console.log(yesAnswers);
+        console.log(yesAnswers);
+        const finalScore = Math.floor(100*(yesAnswers/3));
 
     alert(`Wow ${userName} you really did it! We'll tally your score and post it below!`);
         if(yesAnswers < 3){
-            results.textContent = `I honestly expected more from you ${userName}. You got ${yesAnswers} out of 3 correct. Try again?`;
+            results.textContent = `I honestly expected more from you ${userName}. You scored ${finalScore}% correct. Try again?`;
         } else {
-            results.textContent = `Wow ${userName} you got all 3 correct! Great job!;`
+            results.textContent = `Wow ${userName} you scored ${finalScore}%! Great job!;`
         }
         })
