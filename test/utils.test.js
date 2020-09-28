@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import {yesChecker} from '../yes-checker.js'
+import {yesChecker} from './yes-checker.js'
 
 const test = QUnit.test;
 
