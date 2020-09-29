@@ -1,39 +1,63 @@
 
 body {
-    --color1: #ffffff;
-    --color2: #ffffff;
-    --color3: #ffffff;
-    --color4: #ffffff;
-    --color5: #ffffff;
-
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
+    background-color: lightseagreen;
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+}
+
+button {
+    background-color: rgb(182,109,13);
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22pt;
+    letter-spacing: 1px;
+    color: rgb(182,109,13);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: calc(var(--footer-height));
+}
+
+.left-column {
+    width: 20%;
+    justify-content: center;
+    align-content: center;
+    padding-left: 20px;
+    vertical-align: center;
+}
+
+.about-me {
+    width: 60%;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
+}
+
+.right-column {
+    width: 20%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-left: 20px;
+    vertical-align: center;
 }
 
 section {
@@ -53,10 +77,11 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center; 
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    /* background-image: url("https://images.freeimages.com/images/large-previews/9b6/among-giants-1375605.jpg"); */
 }
 
 footer {
@@ -72,19 +97,12 @@ h2 {
     font-weight: bold;
 }
 
-.gutter-right {
-    margin-right: 20px;
-}
 
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
-}
 
 header img {
     height: var(--header-height);
+    width: 100%;
 }
-
-
 
 content {
     width: 80%;
