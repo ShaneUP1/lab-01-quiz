@@ -33,7 +33,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: stretch;
+    align-items: flex-start;
     margin-bottom: calc(var(--footer-height));
 }
 
@@ -41,8 +41,9 @@ main {
     width: 20%;
     justify-content: center;
     align-content: center;
+    padding-top: 125px;
     padding-left: 20px;
-    vertical-align: center;
+    
 }
 
 .about-me {
@@ -56,6 +57,7 @@ main {
     justify-content: center;
     align-content: center;
     align-items: center;
+    padding-top: 125px;
     padding-left: 20px;
     vertical-align: center;
 }
@@ -93,7 +95,7 @@ footer {
 
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 16pt;
     font-weight: bold;
 }
 
@@ -123,21 +125,6 @@ footer {
     box-shadow: var(--shadow);
 }
   
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
-
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
+ 
 
   }
